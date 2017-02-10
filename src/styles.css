@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background:#E2E4E6;
+    padding-top:4em;
+}
+
+.form-container {
+    background:white;
+    padding:3.5em;
+    width:500px;
+    position:fixed;
+    left:50%;
+    margin-left:-250px;
+}
+
+button {
+    padding:1.2em;
+    width:100%;
+    cursor:pointer;
+    margin-bottom:15px;
+    font-size:1.3em;
+}
+
+.basic-btn {
+    background: #3B8598;
+    color:white;
+}
+
+input.txt {
+    background:#fff !important;
+    padding:1.3em 1em;
+    font-size:1.3em;
+    border: 1px solid #BBBBBB;
+}
+
+h2 {
+    margin: 1.7em 0 .9em 0;
+}
+
+.alc {
+    text-align:center;
+    display:block;
+    margin: 15px 0;
+}
+
+.error {
+    background:#f1f0ef;
+    padding:1em;
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+}
+
+#goback {
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:.8em;
+    color:#3B8598;
+}
+#goback span {
+    font-size:1em;
+}
+
+
+
+.loading {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #ccc;
+  position: fixed;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+  border-radius: 50%;
+}
+
+
+.loading:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background: #E2E4E6;
+  top: 10px;
+  left: -5px;
+  animation: spin 1.2s infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding-top:1.2em;
+    }
+
+    .form-container {
+        padding:1.2em;
+        width:90%;
+        margin-left:-45%;
+    }
+    button {
+        font-size:1em;
+    }
+}
